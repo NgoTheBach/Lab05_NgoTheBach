@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dbRubikStore">
+  <DataContextMoniker Name="/dbRubikStoreDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e88871e8-248f-4ce1-aa69-4c96ee66ea9a" absoluteBounds="6.25, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbRubikStoreDataContext/ChiTietDonHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b501e94-49f3-4f43-a707-4fbb2024929d" absoluteBounds="6.265, 1.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fe6c4749-2d5c-4c50-a0b6-44a964e3329a" absoluteBounds="3.5, 4.875, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/dbRubikStoreDataContext/Rubik" />
+      <nestedChildShapes>
+        <elementListCompartment Id="968cb534-f4a6-4074-a9d3-6b89bbf22fa7" absoluteBounds="3.515, 5.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d35bbda9-5875-40e9-9238-cc30d3f9e092" absoluteBounds="3.5, 1.125, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/dbRubikStoreDataContext/DonHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e4adfd1d-e6d5-4eeb-b2fb-317c3fc9f1d8" absoluteBounds="3.515, 1.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a49e2561-08c1-4e85-b85b-0ba4169a8a79" absoluteBounds="0.75, 1, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/dbRubikStoreDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f841c35-1d18-4503-8069-576a73dc75c4" absoluteBounds="0.765, 1.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c6048929-1141-4e71-a220-0f5d32b3869e" absoluteBounds="0.75, 5.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/dbRubikStoreDataContext/Loai" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e1f0f938-9218-4a30-9359-4007ad62819d" absoluteBounds="0.765, 5.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 6.14505126953125); (7.25 : 6.14505126953125); (7.25 : 2.95359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbRubikStoreDataContext/Rubik/Rubik_ChiTietDonHang" />
+      <nodes>
+        <classShapeMoniker Id="fe6c4749-2d5c-4c50-a0b6-44a964e3329a" />
+        <classShapeMoniker Id="e88871e8-248f-4ce1-aa69-4c96ee66ea9a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.16429768880208); (6.25 : 2.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbRubikStoreDataContext/DonHang/DonHang_ChiTietDonHang" />
+      <nodes>
+        <classShapeMoniker Id="d35bbda9-5875-40e9-9238-cc30d3f9e092" />
+        <classShapeMoniker Id="e88871e8-248f-4ce1-aa69-4c96ee66ea9a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.10659912109375); (3.5 : 2.10659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbRubikStoreDataContext/KhachHang/KhachHang_DonHang" />
+      <nodes>
+        <classShapeMoniker Id="a49e2561-08c1-4e85-b85b-0ba4169a8a79" />
+        <classShapeMoniker Id="d35bbda9-5875-40e9-9238-cc30d3f9e092" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.09699625651042); (3.5 : 6.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbRubikStoreDataContext/Loai/Loai_Rubik" />
+      <nodes>
+        <classShapeMoniker Id="c6048929-1141-4e71-a220-0f5d32b3869e" />
+        <classShapeMoniker Id="fe6c4749-2d5c-4c50-a0b6-44a964e3329a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
